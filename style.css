@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  body{
+
+     overflow: hidden;
+
+}
+
+.sky{
+
+    height: 100vh;
+    width: 100%;
+    background-image: url(skaay1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.tree{
+    width: 300%;
+    height: 90vh;
+    background-image: url(tree.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: -132px;
+    /*animation: carMove linear 43s infinite;*/
+}
+.tree button{
+    border-radius: 4px;
+    width: 95px;
+    margin: 185px 11px;
+}
+.tree button:hover{
+    
+    background-color: red;
+    color: darkblue;
+}
+
+
+/*.car button{
+
+    border-radius: 8px;
+    margin: 108px 162px;
+}
+.car button:hover{
+
+    background-color: blue;
+    color: yellow;
+    
+}*/
+.track{
+    width: 800vw;
+    height: 70vh;
+    background-image: url(rdf.jpg);
+    background-repeat: repeat-x repeat-y;
+    position: absolute;
+    top: 68vh;
+    /*animation: carMove linear 13s infinite;*/
+}
+.car{
+    height: 181px;
+    width: 380px;
+    background-image: url(body.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 244px;
+    bottom: 25vh;
+   /* animation: shake linear .9s infinite;*/
+}
+.wheel1 img{
+    width: 77px;
+    position: relative;
+    top: 119px;
+    left: 45px;
+    /*animation: wheelRotation linear .26s infinite;*/
+}
+.wheel2 img{
+    width: 77px;
+    position: relative;
+    top: 36px;
+    left: 250px;
+   /*animation: wheelRotation linear .26s infinite;*/
+
+}
+
+@keyframes wheelRotation
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carMove
+{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes shake
+{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+@keyframes shakebody
+{
+    0%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+
+
