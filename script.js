@@ -4,7 +4,7 @@
 
 function start() {
     var audio = document.createElement('audio');
-    audio.setAttribute('src', 'img/sound.mp3');
+    audio.setAttribute('src', 'sound.mp3');
     audio.loop = true;
     audio.play();
     document.getElementById("tr").style.animation = "carMove linear 15s infinite";
@@ -17,5 +17,5 @@ function start() {
 function nite() {
 
 
-    document.getElementById("tr").style.background = "url('img/pg4.jpg') repeat-x";
+    document.getElementById("tr").style.background = "url('pg4.jpg') repeat-x";
 }
