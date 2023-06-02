@@ -17,7 +17,7 @@
     position: absolute;
 }
 .tree{
-    width: 300%;
+    width: 100%;
     height: 90vh;
     background-image: url(tree.jpg);
     background-size: cover;
@@ -33,7 +33,7 @@
 }
 .tree button:hover{
     
-    background-color: red;
+    background-color: white;
     color: darkblue;
 }
 
